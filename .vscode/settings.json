@@ -1,0 +1,12 @@
+{
+    "chat.sendElementsToChat.attachCSS": false,
+    "chat.sendElementsToChat.enabled": false,
+    "chat.sendElementsToChat.attachImages": false,
+    "inlineChat.askInChat": false,
+    "inlineChat.fixDiagnostics": false,
+    "chat.experimental.useSkillAdherencePrompt": false,
+    "chat.customAgentInSubagent.enabled": false,
+    "chat.checkpoints.enabled": false,
+    "chat.agent.enabled": false,
+    "chat.undoRequests.restoreInput": false
+}
