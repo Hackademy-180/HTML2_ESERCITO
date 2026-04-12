@@ -215,8 +215,9 @@ background-color: rgb(194, 194, 119);
 
 /* FOOTER */
 footer {
+    width: 100%;
     text-decoration-style: solid;
-
+   
     text-align: left;
     padding: 20px;
     background: linear-gradient(#eefc92e6, #c9eba5c7);
@@ -225,16 +226,85 @@ footer {
 
 
 
+
+/* misura per posizionamento BOTTONE/IMG */
+
+.back-to-top {
+
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+/* display: block rende l'elemento gestibile come blocco. */
+     z-index: 9999;
+    display: block;
+    background-color: aquamarine;
+
+}
+
+
+/* misura per BOTTONE//IMG IN BASSO A DESTRA. */
+.back-to-top img {
+
+    width: 30px;
+    height: 60px;
+    display: block;
+
+}
+
+
+
+
 @media screen and (max-width: 767px) {
-  
+    .intestazione img {
+        width: 40px;
     }
 
+    nav a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .content-layout {
+        flex-direction: column;
+    }
+
+    .cards,
+    aside {
+
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .intestazione img, nav a {
+        font-size: 10px;
+    }
+
+    .content-layout, .cards {
+        flex-direction: column;
+    }
+
+    .card, aside {
+        width: 100%;
+    }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+     box-sizing: border-box;
+    width: 100%;
+    display: block;
+}
 
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-   
+
+  
+
+
 
 }
 
-@media screen and (min-width: 1024px) {
-}
+
+
