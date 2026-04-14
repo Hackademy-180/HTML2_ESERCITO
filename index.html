@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Aulab Blog</title>
 
     <!-- FONT -->
@@ -12,20 +14,21 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    </head>
+    <body id="top">
 
 <!-- HEADER -->
-<header class="intestazione">
-    
-        <img src="./media/AULAB_logo.jpg" alt="Logo Aulab" width="60">
-    
+    <header class="intestazione">
+        <h2>Blog</h2>
+        <a href="./media/header.jpg" class="ImmagineHero">Home >></a>
+</header>
 
+    <!-- titolo + nav e links -->
+ 
+  <nav id="navbar">
+       <h1>Aulab</h1>
 
-    <!-- titolo + nav -->
-    <h1>Aulab</h1>
-
-  <nav>
+         <img src="./media/AULAB_logo.jpg" alt="Logo Aulab" class="logoAulab">
     <ul>
         <li><a href="https://aulab.it/corsi">CORSI</a></li>
         <li><a href="https://aulab.it/guide-avanzate">GUIDE</a></li>
@@ -37,68 +40,67 @@
 </nav>
 
 
-<!-- SOTTOTITOLO -->
 
-<h2 class="articles" >Articoli in evidenza</h2>
 
-</header>
 
 <!-- MAIN -->
 
 <main>
-<div class="content-layout">
+    
+<!-- SOTTOTITOLO -->
 
+<h2 class="articles" >Articoli in evidenza</h2>
 
-    <section class="cards">
+    <section class="ReadArticles">
 
-        <article class="card">
-          <img src="https://aulab-hackademy.s3.eu-south-1.amazonaws.com/attachments/qLVY6CjcGqFaRfo2Npu0YsjjduSbSesVvIqeAKWj.png" alt="Codi1g">
-            <p class="date">8 Ottobre 2024</p>
-            <h3>Come impari applicandoti</h3>
-            <p>Breve descrizione dell articolo.</p>
-            <button>Leggi >></button>
-        </article>
+        <!-- Inizio Cards per immagini  -->
+     <article class="Article1" > 
+        <img src="./media/img.jpg" alt="Img-1" class="Img-1">
+                    <p class="date">37 Ottobre 2024</p>
+                    <h3>Come impari applicandoti</h3>
+                    <p>Breve descrizione dell articolo.</p>
+                 <button class="btnArticle">Leggi >></button>
+         </article>
 
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200" alt="Codi2g">
+         <!-- articolo 2 -->
+     <article class="Article2">
+        <img src="./media/img1.jpg" alt="Img-2" class="Img-2">
             <p class="date">30 Settembre 2024</p>
             <h3>Studiare con metodo</h3>
             <p>Breve descrizione dell articolo.</p>
-            <button>Leggi >></button>
+           <button>Leggi >></button>
         </article>
 
-        <article class="card">
-           <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200" alt="Cod3ng">
+     <!-- articolo3 -->
+        <article class="Article3">
+          <img src="./media/img2.jpg" alt="Img-3"class="Img-3">
             <p class="date">27 Maggio 2024</p>
             <h3>Programmare da zero</h3>
             <p>Breve descrizione dell articolo.</p>
             <button>Leggi >></button>
         </article>
-
-    </section>
-
-    <!-- ASIDE: ARTICOLI SUGGERITI -->
- <!-- <aside>
-    <h3>Leggi anche</h3>
-
-    <article class="article">
-
-        <figure>
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200" width="300" alt="Coding">
-            <figcaption>Come funziona il coding</figcaption>
-        </figure>
+</section>
 
 
-   </article>
+
+    <!--         extra  -ASIDE    +  / Link Immagine da seguire    -->
+<aside >
+<section id="dump-section">
+    <div class="card" id="last-card">
+        <h4>Come funziona il coding</h4>
+       <h5>CAPIRE COME FARE CODIG</h5>
+            Puoi vedere più info qui:
+            <a href="https://aulab-hackademy.s3.eu-south-1.amazonaws.com/attachments/qLVY6CjcGqFaRfo2Npu0YsjjduSbSesVvIqeAKWj.png" target="_blank">Clicca qui</a>
+        </p>
+    </div>
+</section>
+
 </aside>
- 
-</div> -->
-
 
 
   <!-- BOTTONE -->
 
-<a href="#top" class="back-to-top">
+<a href="#navbar" class="back-to-top">
     <img src="./media/imgsu.jpg" alt="Torna su">
 </a>
 
@@ -107,29 +109,13 @@
 </main>
 
 
-
-
-
-
-    <!--         extra         ___________________________________________________________                -->
-
-<section id="extra-section">
-    <div class="card" id="last-card">
-        <h4>Come funziona il coding</h4>
-        <p>Un articolo introduttivo per capire come funziona la programmazione.</p>
-        <p>
-            Puoi vedere più info qui:
-            <a href="https://aulab-hackademy.s3.eu-south-1.amazonaws.com/attachments/qLVY6CjcGqFaRfo2Npu0YsjjduSbSesVvIqeAKWj.png" target="_blank">Clicca qui</a>
-        </p>
-    </div>
-</section>
-
-
-
-
-
 <!-- FOOTER -->
 <footer>
+    <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Linketin</li>
+    </ul>
     <p>&copy; 2026 Aulab Scuola - Tutti i diritti riservati.</p>
 </footer>
 
