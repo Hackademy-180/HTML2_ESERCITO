@@ -40,6 +40,7 @@ body {
 
 
 .intestazione h2 {
+    text-transform: uppercase;
     margin:0;
     position: absolute;
     top: 30%;
@@ -73,6 +74,8 @@ align-items: center;
 background-color: rgb(81, 102, 95);
 position: relative;
 }
+
+
 .logoAulab {
     width: 60px;
     border-radius: 8px;
@@ -80,6 +83,7 @@ position: relative;
 /* Come da traccia richiesto, LINK ALLINEATI IN NAVBAR */
 /* LISTA UL ORIZZONTALE */
 nav ul {
+ 
 background-color: rgba(165, 42, 42, 0.171);
 color: yellowgreen;
 /* Display-flex: dispongo in modo da allineare, meglio gestisco poi, lo spazio.  */
@@ -204,6 +208,7 @@ font-weight: bold;
 
 /* Stili per titoli cards, paragrafo, e bottone */
 .ReadArticles h3 {
+    letter-spacing: 1px;
      margin: 15px ;
     font-size: 20px;
 
@@ -211,6 +216,12 @@ font-weight: bold;
 
 /* TESTO PARAGRAFO COLORE E ALTRE PROPIETA' */
 .ReadArticles p {
+
+   
+    text-align: center;
+       text-transform: capitalize;
+       /*Dimensioni del testo con il font.size usando px; 
+        */
     font-size: 14px;
     line-height: 1.4;
     margin-left: 10px;
@@ -220,6 +231,8 @@ font-weight: bold;
 
 
 .ReadArticles button {
+
+    text-align: left;
      margin: 15px 0 20px 30px;
     padding: 10px 15px;
     background-color: #c2c285;
@@ -231,7 +244,10 @@ font-weight: bold;
 }
 
 /* EFFETTO A BOTTONE PER CARDS */
+  
 .ReadArticles button:hover {
+text-align: left;
+       text-transform: capitalize;
     background-color: white;
 }
 
@@ -269,6 +285,7 @@ footer {
   margin-top: 100px;
     height: 30vh;
     align-items: center;
+    text-transform: uppercase;
     color: white;
 display: flex;
 justify-content: space-around;
@@ -314,7 +331,12 @@ main {
 
 
 
-/* MEDIA QUERY */
+/* MEDIA QUERY
+Esempi Utili: Mobile-> max-width: 767px
+Tablet-> max-width: 1024px
+Desktop-> min-width:1025 px; 
+
+*/
 /* Qui definiamo gli stili per uno schermo più piccolo ed adattarlo agli schermi */
 
 @media (max-width: 767px) {
@@ -381,10 +403,6 @@ main {
 /* Piano di lavoro CSS: X->orizzontale / Y->Verticale  
 
 Nel CSS Trasformiamo e Miglioriamo l'aspetto di Layout del nostro lavoro di pagina html che andiamo a fare; nel css; puoi inserire l'allineamento degli assi X e Y ;
-E degli elementi tags che possono essere posizionati sull'asse direttamente o starne ai limitrofi. 
-Quindi l'allinamneto, le spaziature, i dettagli di colore, e le sfumature sono dettagli importanti. Ma anche i FONT per la calligrafia del testo, ha molta rilevanza. 
-Alcuni FONT , intesi come dimensione testo ed, o lo spessore, altri sono oinvece proprio lo stile applicato. 
-Puoi spostare e regolare ombre; margini, spazi internmi esterni; o anche ridurli e raccogliere il design in alternativa per lavorare diretto sugli elementi.
-
+E degli elementi tags che possono essere posizionati sull'asse direttamente o starne ai limitrofi, puoi applicare gli stili
 
 */
