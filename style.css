@@ -23,28 +23,38 @@ body {
 /* __________________________________________________________________________________________
 
             /* HEADER */
-
-
      .intestazione { 
-        /* Propietà trasforma un contenitore flex container (elemento a cui applico)
-        Puoi decidere, QUANTO UN ELEMENTO SI ESPANDE DISPETTO AGLI ALTRI 
-        Così tutti gli elementi all'interno possono disporsi in modo flessibile (e personalizzato: allinearli al centro, distribuirli in modo uniforme, cambiare ordine, gestire dimensione el.;....)*/
-    display: flex;
-    /* Li metto tutti allineati al centro dell'asse trasversale. */
-    align-items: center;
-    justify-content: space-between;
-    /* Padding aggiunge lo spazio dentro l'elemento così non rimnga attaccato ai bordi. */
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* position: static;
-    top: 0; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* Li metto tutti allineati al centro dell'asse trasversale. */
+        align-items: center;
+        justify-content: center;
+        /* Padding aggiunge lo spazio dentro l'elemento così non rimnga attaccato ai bordi. */
+        padding: 8px 20px;
+        background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0,0.6)),url("./media/header.jpg") center/cover no-repeat;
+        position: static;
+        top: 0;
+        
 }
+
+
 .intestazione h2 {
+    margin:0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
     color: yellow;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
 }
 
 .ImmagineHero {
+
+justify-content: space-between; 
     color: yellow;
+    /* transform: translate(); */
+ 
     text-decoration: none;
 }
 
@@ -53,33 +63,35 @@ body {
 
 /* NAV PER LA NAVIGAZIONE */
 nav {
+ 
 color:whitesmoke;
 display: flex;
-/* Utile a distribuire elementi lungo a una riga */
 justify-content: space-between;
 /* permette di controllare allineamento ( in : Asse orizzontale - X) */
 align-items: center;
-
+ padding: 15px 30px;
+background-color: rgb(81, 102, 95);
+position: relative;
 }
-
+.logoAulab {
+    width: 60px;
+    border-radius: 8px;
+}
 /* Come da traccia richiesto, LINK ALLINEATI IN NAVBAR */
 /* LISTA UL ORIZZONTALE */
 nav ul {
 background-color: rgba(165, 42, 42, 0.171);
 color: yellowgreen;
-
 /* Display-flex: dispongo in modo da allineare, meglio gestisco poi, lo spazio.  */
 /* DISPOSTO IN MODO ORIZZONTALE. */
 display:flex;
-/* Gap: SPAZIO TRA; permette ad aggiungere uno spazio tra gli elementi in modo più rapido. */
-gap:15px;
-padding: 0; 
-/* Il margine crea spazio al di fuori l'elemento, spostandolo dispetto ad altri */
-margin: 0;
 /* Personalizzo i punti elenco con list-style */
  list-style: none;
+ gap:16px;
+ scroll-padding-block-end: inherit;
         
 }
+
 
 
 nav a {
@@ -91,7 +103,7 @@ nav a {
     /* Traccia richiede inserzione di bordo  */
     background-color: rgba(19, 17, 17, 0.306);
     /* Aggiungo transition per rendere i cambiamenti + fluidi */
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 
@@ -116,7 +128,8 @@ h1{
 
 /* COLORI AI TITOLI, COLOR GIALLO */
  h2, h3, h4, h5{
- color: yellow;
+
+    color: yellow;
 }
 
 
@@ -127,10 +140,7 @@ p, a, button {
 }
 
 
-.logoAulab {
-    width: 60px;
-    border-radius: 8px;
-}
+
 .articles {
 text-align: center;
 font-weight: bold;
@@ -237,9 +247,13 @@ font-weight: bold;
     margin-top: 60px;
     margin-bottom: 60px;
     padding-bottom: 40px;
+ color:blue;
+     width: 350px;
+    padding: 20px;
 }
 
 #last-card {
+    background-color: rgb(104, 104, 81);
     width: 350px;
     padding: 20px;
 }
