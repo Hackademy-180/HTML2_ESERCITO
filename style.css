@@ -1,6 +1,5 @@
 /* stile di pagina */
 
-
 *{
     font-family:"Source Serif 4", serif; ;
 }
@@ -46,16 +45,16 @@ body {
     top: 30%;
     left: 50%;
     color: yellow;
-    transform: translate(-50%,-50%);
-    font-size: 4rem;
+  
+    font-size: bold;
 }
+
+
 
 .ImmagineHero {
 
 justify-content: space-between; 
     color: yellow;
-    /* transform: translate(); */
- 
     text-decoration: none;
 }
 
@@ -70,21 +69,25 @@ display: flex;
 justify-content: space-between;
 /* permette di controllare allineamento ( in : Asse orizzontale - X) */
 align-items: center;
- padding: 15px 30px;
-background-color: rgb(81, 102, 95);
+padding: 15px 30px;
+background-color: rgb(124, 124, 20);
 position: relative;
 }
 
 
 .logoAulab {
+    height: 60px;
     width: 60px;
     border-radius: 8px;
 }
-/* Come da traccia richiesto, LINK ALLINEATI IN NAVBAR */
+
+
+/* Come da traccia, LINK ALLINEATI IN NAVBAR */
 /* LISTA UL ORIZZONTALE */
+
+
 nav ul {
- 
-background-color: rgba(165, 42, 42, 0.171);
+ background-color: rgba(165, 42, 42, 0.171);
 color: yellowgreen;
 /* Display-flex: dispongo in modo da allineare, meglio gestisco poi, lo spazio.  */
 /* DISPOSTO IN MODO ORIZZONTALE. */
@@ -115,7 +118,7 @@ nav a {
 nav a:hover {
     /* Appare se passo sopra con il mouse (con la prop. :hover) */
     border-bottom: 2px solid yellow;
-    background-color: rgba(136, 47, 47, 0.6);
+    background-color: rgba(122, 52, 52, 0.6);
 }
 
 /* Titoli E FONT DIVERSI PER TITOLO E PAGINA */
@@ -133,17 +136,24 @@ h1{
 /* COLORI AI TITOLI, COLOR GIALLO */
  h2, h3, h4, h5{
 
+    font-size: 30px bold;
     color: yellow;
 }
 
 
 p, a, button {
+    color:black;
     font-family: "Roboto Serif", serif;
     /* Regola spessore del testo */
     font-weight: 400;
 }
 
 
+
+
+
+/* _________________________________________________________________________________________________________ */
+/* CARDS - 3 ARTICOLI */
 
 .articles {
 text-align: center;
@@ -152,8 +162,6 @@ font-weight: bold;
 }
 
 
-/* _________________________________________________________________________________________________________ */
-/* CARDS - 3 ARTICOLI */
 
 .ReadArticles{
     width: 60%;
@@ -208,15 +216,18 @@ font-weight: bold;
 
 /* Stili per titoli cards, paragrafo, e bottone */
 .ReadArticles h3 {
-    letter-spacing: 1px;
-     margin: 15px ;
-    font-size: 20px;
+    color: yellow;
 
+    letter-spacing: 1px;
+    margin: 15px ;
+    font-size: 20px;
+    
 }
 
 /* TESTO PARAGRAFO COLORE E ALTRE PROPIETA' */
 .ReadArticles p {
-
+    
+    color:red;
    
     text-align: center;
        text-transform: capitalize;
@@ -225,8 +236,7 @@ font-weight: bold;
     font-size: 14px;
     line-height: 1.4;
     margin-left: 10px;
-    color: purple;
-    text-decoration: dotted;
+ 
 }
 
 
@@ -256,19 +266,11 @@ text-align: left;
 
 /* Sezione con Aside e Immagine da seguire (EXTRA) */
 
-#dump-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding-bottom: 40px;
- color:blue;
-     width: 350px;
-    padding: 20px;
-}
 
 #last-card {
+    border-radius: 30px;
+    height: 200px;
+    width: 200px;
     background-color: rgb(104, 104, 81);
     width: 350px;
     padding: 20px;
@@ -303,17 +305,17 @@ justify-content: space-around;
     position: fixed;
     bottom: 60px;
     right: 20px;
-
+    border-radius: 7px;
     z-index: 9999;
    /* per forza con z-index aggiungo: */
-display: block;
+   display: block;
 /* Un azione blocco */
    background-color: aquamarine;
 
 }
 
 
-/* misura per BOTTONE//IMG IN BASSO A DESTRA. */
+/* BOTTONE//IMG IN BASSO A DESTRA. */
 .back-to-top img {
 
     width: 30px;
@@ -329,12 +331,14 @@ main {
 }
 
 
+/* _________________________________________________________________________________________________________________________________________________________________________________________________________________ */
+/* __________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-
-/* MEDIA QUERY
-Esempi Utili: Mobile-> max-width: 767px
-Tablet-> max-width: 1024px
-Desktop-> min-width:1025 px; 
+            */
+            /* MEDIA QUERY
+            Esempi Utili: Mobile-> max-width: 767px
+            Tablet-> max-width: 1024px
+            Desktop-> min-width:1025 px; 
 
 */
 /* Qui definiamo gli stili per uno schermo più piccolo ed adattarlo agli schermi */
@@ -343,7 +347,7 @@ Desktop-> min-width:1025 px;
 
     .intestazione {
         flex-direction: column;
-        gap: 10px;
+  
         padding: 10px;
     }
 
@@ -384,14 +388,45 @@ Desktop-> min-width:1025 px;
 
 
 
-/* PER ANIMAZIONI CSS */
-/* c'è anche animation-timing-function:linear esempoio come proprietà ad animare nel css  Olgtre animation per durata, ruota, durata di secondi e conta ad iterazione. */
 
-/* aggiungere in parentesi bakgroundcolor, transform con rotate se vuoi o altro e i valori in parentesi con il deg - questo animazione 2 passaggi , primo su elemento voglio animare, secondo sull'animazione stessa */
-@keyframes {
-    0%()
-    25%()
-    100%()
+
+
+
+
+/* PER ANIMAZIONI CSS */
+/* ANIMAZIONI CON IL KEYFRAME: EFFETTI APPLICABILI PER ANIMAZIONI SPECIALI CON IL CSS */
+
+/* DEFINISCO IL MIO BOTTONE TORNA IN SU  */
+
+
+.back-to-top {
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+
+/* LUNGO ASSI X E Y ;  */
+
+/* TRANSFORM ACCETTA VALORI da funzione tipo: scale, translate, rotate e skew-*/
+
+/* METTI QUESTI STILI AGLI ASSI USANDOLI ANCHE AD ENTRAMBI MA TRA PARENTESI E SPECIFICA ANCHE LI LE MISURE RELATIVE, */
+@keyframes pulse {
+    0% {
+        transform: 0.9;
+        opacity: 1; 
+
+    }
+/* leggerissimo ingrandimento */
+50% {
+      transform: scale(1.08); 
+        opacity: 1;
+
+    
+}
+
+100% {
+    transform: scale(1);
+    opacity: 0.9; 
+}
 }
 
 
